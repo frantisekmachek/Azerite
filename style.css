@@ -1,0 +1,83 @@
+body {
+    font-family: 'Inter';
+    margin:0;
+}
+
+.main-header {
+    display:flex;
+    align-items: center;
+    width:100%;
+    height:150px;
+    background-color: #0174BE;
+    position:sticky;
+    top:0px;
+}
+
+nav {
+    width:100%;
+}
+
+.main-nav {
+    display:grid;
+    align-items: center;
+    grid-template-columns:max-content auto;
+    padding-left:60px;
+    padding-right:60px;
+}
+
+.logo {
+    display:inline;
+}
+
+.nav-links {
+    display:flex;
+    align-items: center;
+    padding-left:120px;
+    padding-right:60px;
+}
+
+.nav-links > ul, .food-nav > ul {
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    padding:0;
+    margin:0;
+
+    list-style-type:none;
+    text-decoration:none;
+}
+
+li {
+    display:inline;
+    font-size:40px;
+}
+
+.selected {
+    color:white;
+}
+
+.food-nav {
+    display:flex;
+    align-items:center;
+    justify-content:stretch;
+    height:120px;
+    background-color: #FFC436;
+}
+
+.food-menu {
+    width:100%;
+    padding-left:32px;
+    padding-right:32px;
+}
+
+.food-menu > ul{
+    display:grid;
+    align-items:center;
+    width:100%;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:30px;
+    padding:0;
+    text-align:center;
+    font-weight:bold;
+}
