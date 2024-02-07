@@ -66,6 +66,12 @@ li {
     background-color: #FFC436;
 }
 
+.menu-button {
+    display:none;
+    font-size:30px;
+    text-align:right;
+}
+
 .food-menu {
     width:100%;
     padding-left:32px;
@@ -86,16 +92,16 @@ li {
 .hotdog-menu {
     display:flex;
     flex-wrap:wrap;
+    width:auto;
     gap:40px;
-    border:1px solid black; /* Delete later */
     margin-left:auto;
     margin-right:auto;
     margin-top:70px;
-    justify-content: center;
+    margin-bottom:70px;
 }
 
 .hotdog-menu-item {
-    width:472px;
+    width:450px;
     height:297px;
     border-radius:15px;
     background-color: #0174BE;
@@ -121,6 +127,7 @@ li {
     padding:0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display:block;
 }
 
 .menu-caption > h3 {
@@ -139,4 +146,119 @@ li {
     display:flex;
     align-items:center;
     justify-content: center;
+}
+
+@media (max-width:1364px) {
+    .hotdog-menu {
+        justify-content:center;
+    }
+}
+
+@media (max-width:1400px) {
+    .nav-links > ul > li {
+        font-size:34px;
+    }
+
+    .food-menu > ul > li {
+        font-size:34px;
+    }
+}
+
+@media (max-width:1200px) {
+    .nav-links > ul > li {
+        font-size:30px;
+    }
+    .food-menu > ul > li {
+        font-size:25px;
+    }
+
+    .main-header {
+        height:90px;
+    }
+
+    .food-nav {
+        height:60px;
+    }
+
+    .logo {
+        width:147px;
+    }
+
+    .main-nav {
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .nav-links {
+        padding-right:0;
+    }
+
+    .main-content-wrapper {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width:940px) {
+    .nav-links > ul > li > a {
+        font-size:26px;
+    }
+}
+
+@media (max-width:768px) {
+    .nav-links {
+        display:none;
+    }
+    .main-body {
+        display:flex;
+        width:100%;
+        height:auto;
+        height:100%;
+    }
+    .food-nav {
+        height:auto;
+        min-width:160px;
+        max-width:160px;
+        align-items:start;
+    }
+
+    .food-menu > ul {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .food-menu {
+        padding:0;
+        margin-top:20px;
+        gap:40px;
+        height:auto;
+    }
+
+    .hotdog-menu-item {
+        width:100%;
+        height:auto;
+        height:297px;
+    }
+
+    .menu-caption > h3 {
+        font-size:18px;
+    }
+
+    .hotdog-menu-item, .hotdog-menu-item > img {
+        border-radius:0;
+    }
+
+    .hotdog-menu {
+        margin:0;
+    }
+
+    .main-header {
+        height:80px;
+    }
+    .main-content-wrapper {
+        width:auto;
+    }
+
+    .menu-button {
+        display:block;
+    }
 }
