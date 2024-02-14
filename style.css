@@ -350,7 +350,7 @@ main{
 
 input[type="email"],
 input[type="password"] {
-    width: 60%;
+    width: 96%;
     padding: 5px;
     background-color: #FFC436;
     border: 1px solid #ffffff;
@@ -360,16 +360,14 @@ input[type="password"] {
 
 button {
     background-color: #FFC436;  
-    padding: 5px 20px;
+    padding: 10px 40px;
     border: none;
     border-radius: 5px;
+    float: right;
 }
 
-
-
-
-
-
-
-
-
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
