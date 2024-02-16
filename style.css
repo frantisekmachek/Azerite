@@ -262,6 +262,46 @@ li {
         display:block;
     }
 }
+
+/*About page*/
+
+.about-content-wrapper{
+
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.aboutpicture2 {
+
+    display: none;
+
+}
+
+.aboutpicture1 {
+
+    width: 85%;
+    height: 85%;
+    border-radius: 3%;
+    padding-top: 60px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.about-caption {
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #FFC436;
+    padding-top: 80px;
+
+}
+
+
 /* Skibar styles*/
 @media (max-width:1400px) {
 
