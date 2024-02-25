@@ -151,6 +151,11 @@ li {
     justify-content: center;
 }
 
+.card-text > p {
+    margin:0;
+    font-size:1.5vw;
+}
+
 @media (max-width:1364px) {
     .hotdog-menu {
         justify-content:center;
@@ -453,14 +458,27 @@ li {
 
 
 /* Skibar styles*/
-@media (max-width:1400px) {
+@media (max-width:1440px) {
 
     .content-wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .azerite {
+        max-width:711px;
+    }
+    .card-text > p {
+        font-size:30px;
+    }
 
+}
+
+@media (max-width:1000px) {
+
+    .card-text > p {
+        font-size:3vw;
+    }
 
 }
 
@@ -492,9 +510,7 @@ li {
 
 .card-content {
     display: flex; 
-    align-items: center; 
     background-color: #0c356a ;
-
 }
 
 p{
