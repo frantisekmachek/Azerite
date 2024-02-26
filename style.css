@@ -370,7 +370,7 @@ li {
 
         justify-self: end;
         width: 87%;
-      
+        margin-bottom: 20px;
 
        }
 
@@ -431,6 +431,18 @@ li {
     .picture-tablet, .aboutpicture2 {
 
         display: none;
+
+    }
+
+    .tablet-caption {
+
+        font-size: 20px;
+
+    }
+
+    .about-tablet {
+
+        font-size: 28px;
 
     }
 
