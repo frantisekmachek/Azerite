@@ -366,6 +366,7 @@ li {
         display: block;
         border-radius: 30px;
         width: 87%;
+        margin-left: 1%;
         margin-top: 41px;
         height: 415px;
 
@@ -376,6 +377,7 @@ li {
         justify-self: end;
         width: 87%;
         margin-bottom: 20px;
+        margin-right: 1%;
 
        }
 
