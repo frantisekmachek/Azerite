@@ -8,21 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the font family used on this website (Inter) -->
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header class="main-header">
-        <nav class="main-nav">
+        <nav id="main-nav"> 
             <img class="logo" src="Images/Logo.png">
-            <div class="nav-links">
+            <div id="nav-links">
                 <ul>
                     <li><a>DRINKY</a></li>
-                    <li><a href="food-hot-dogs.html">JÍDLA</a></li>
+                    <li><a href="food-hot-dogs.html" class="black">JÍDLA</a></li>
                     <li><a>VÝROBKY</a></li>
-                    <li><a>O FIRMĚ</a></li>
+                    <li><a href="about.html" class="black">O FIRMĚ</a></li>
                 </ul>
             </div>
-            <h2 class="menu-button">MENU</h2>
+            <h2 id="menu-button">MENU</h2>
         </nav>
     </header>
     <main class="main-page-main">
@@ -74,6 +76,14 @@
             </div>
         </section>
     </main>
+    <div id="mobile-menu">
+        <div id="mobile-menu-content">
+            <div id="mobile-menu-header">
+                <img class="logo" src="Images/Logo.png">
+                <i class="fa fa-close fa-3x" id="close-button"></i>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
