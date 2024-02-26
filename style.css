@@ -151,6 +151,11 @@ li {
     justify-content: center;
 }
 
+.card-text > p {
+    margin:0;
+    font-size:1.5vw;
+}
+
 @media (max-width:1364px) {
     .hotdog-menu {
         justify-content:center;
@@ -167,7 +172,7 @@ li {
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:1440px) {
     .nav-links > ul > li {
         font-size:30px;
     }
@@ -465,24 +470,22 @@ li {
 
 
 /* Skibar styles*/
-@media (max-width:1400px) {
+@media (max-width:1440px) {
 
     .content-wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    .azerite {
+        max-width:711px;
+    }
+    .card-text > p {
+        font-size:30px;
+    }
 
 }
 
-@media (max-width:400px) {
-
-  .side-content{
-    display: none;
-
-  }
-}
 /* Skibar styles*/
 .nav-links ul li a {
     color: black; 
@@ -504,9 +507,7 @@ li {
 
 .card-content {
     display: flex; 
-    align-items: center; 
     background-color: #0c356a ;
-
 }
 
 p{
@@ -516,15 +517,15 @@ p{
 
 .main-content{
     height: 100%;
+    width:100%;
 }
 
 .content-wrapper{
     display: flex;
+    flex-direction:column;
     margin: 0 auto;
-    margin-top: 100px;
-    gap:20px;
     overflow: hidden;
-    width: 95%;
+    padding:10px 40px;
 }
 
 .card-heading{
@@ -542,14 +543,13 @@ p{
     display: flex;
     justify-content: center;
     background-color: #FFC436;
-   
+    min-width:340px;
 }
 
 main{ 
     display: grid;
     justify-content: space-between;
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
     height: calc(100vh - 150px);
 }
 
@@ -590,4 +590,83 @@ button {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.cards {
+    width:100%;
+    display:flex;
+    gap:30px;
+}
+
+.main-title {
+    width:100%;
+    display:flex;
+    justify-content:left;
+}
+
+.main-title > h2 {
+    font-size:50px;
+}
+
+@media (max-width:1440px) {
+    .cards {
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+@media (max-width:1130px) {
+
+    .card-text > p {
+        font-size:2.5vw;
+    }
+
+    .side-content {
+        min-width:260px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .side-content {
+        display:none;
+    }
+    .main-page-main {
+        grid-template-columns:1fr;
+    }
+
+    .content-wrapper {
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .azerite {
+        border-radius:0;
+        max-width:100%;
+    }
+
+    .card-text > p {
+        font-size:4vw;
+    }
+
+    .card-heading > h1 {
+        font-size:6vw;
+    }
+
+    .card-heading {
+        height:auto;
+    }
+
+    .content-wrapper {
+        margin-top:0;
+        padding:0;
+    }
+
+    .main-title {
+        justify-content:center;
+    }
+
+    .main-title > h2 {
+        font-size:6vw;
+    }
 }
